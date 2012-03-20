@@ -29,12 +29,8 @@
 
 - (id) init {
 	self = [super init];
-	NSMutableArray *theArticles = [[NSMutableArray alloc] init];
-	self.articles = theArticles;
-	[theArticles release];
-	NSMutableArray *theCategories = [[NSMutableArray alloc] init];
-	self.categories = theCategories;
-	[theCategories release];
+	self.articles = [[NSMutableArray alloc] init];
+	self.categories = [[NSMutableArray alloc] init];
 	return self;
 }
 
@@ -52,7 +48,6 @@
 	self.generator = NULL;
 	self.iconUrl = NULL;
 	self.cloudService = NULL;
-	[super dealloc];
 }
 
 @end

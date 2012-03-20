@@ -25,9 +25,7 @@
 
 - (id) init {
 	self = [super init];
-	NSMutableArray *theCategories = [[NSMutableArray alloc] init];
-	self.categories = theCategories;
-	[theCategories release];
+	self.categories = [[NSMutableArray alloc] init];
 	return self;
 }
 
@@ -43,7 +41,6 @@
 	self.copyright = NULL;
 	self.attachedMedia = NULL;
 	self.author = NULL;
-	[super dealloc];
 }
 
 @end

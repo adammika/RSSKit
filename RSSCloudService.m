@@ -22,7 +22,6 @@
 	self.path = NULL;
 	self.procedure = NULL;
 	self.protocol = NULL;
-	[super dealloc];
 }
 
 @end
